@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descricao: MyString
+  start_time: 2019-01-30 19:25:07
+  end_time: 2019-01-30 19:25:07
+  local: MyString
+  group: one
+
+two:
+  descricao: MyString
+  start_time: 2019-01-30 19:25:07
+  end_time: 2019-01-30 19:25:07
+  local: MyString
+  group: two

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  telefone: MyString
+  dataNascimento: 2019-01-30 12:12:02
+
+two:
+  nome: MyString
+  telefone: MyString
+  dataNascimento: 2019-01-30 12:12:02
