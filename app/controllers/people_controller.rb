@@ -5,12 +5,12 @@ class PeopleController < ApplicationController
   def index
     @people = Person.all
 
-    render json: @people
+    #render json: @people
   end
 
   # GET /people/1
   def show
-    render json: @person
+    #render json: @person
   end
 
   # POST /people
