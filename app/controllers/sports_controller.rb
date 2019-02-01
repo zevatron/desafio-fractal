@@ -5,12 +5,12 @@ class SportsController < ApplicationController
   def index
     @sports = Sport.all
 
-    render json: @sports
+    #render json: @sports
   end
 
   # GET /sports/1
   def show
-    render json: @sport
+    #render json: @sport
   end
 
   # POST /sports
