@@ -3,7 +3,11 @@ class GroupsController < ApplicationController
 
   # GET /groups
   def index
-    @groups = Group.all
+    if params[:q].present?
+      @groups = Group.search(params[:q], load: true)
+    else
+      @groups = Group.all
+    end
 
     #render json: @groups
   end
