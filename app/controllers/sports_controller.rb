@@ -1,25 +1,26 @@
 class SportsController < ApplicationController
+  include Swagger::Docs::ImpotentMethods
   before_action :set_sport, only: [:show, :update, :destroy]
 
-  # swagger_controler :sports, "Gerenciamento de atividades esportivas"
+  swagger_controller :sports, "Gerenciamento de atividades esportivas"
 
-  # swagger_api :index do 
-  #   sumary "Retorna todas as atividades cadastradas"
-  #   notes "Atividades esportivas e suas regras..."
-  #   response :success
-  #   response :unprocessable_entity
-  #   #response :500, "Internal Error"
-  # end
+  swagger_api :index do 
+    sumary "Retorna todas as atividades cadastradas"
+    notes "Atividades esportivas e suas regras..."
+    response :success
+    response :unprocessable_entity
+    #response :500, "Internal Error"
+  end
 
-  # swagger_api :show do
-  #   summary "Retorna uma atividade"
-  #   notes "Atividade esportivas e suas detalhes..."
-  #   param :path, :id, :integer, :optional, "Sport id"
-  #   response :ok, "Success", :Sport
-  #   response :unauthorized
-  #   response :not_acceptable
-  #   response :not_found
-  # end
+  swagger_api :show do
+    summary "Retorna uma atividade"
+    notes "Atividade esportivas e suas detalhes..."
+    param :path, :id, :integer, :optional, "Sport id"
+    response :ok, "Success", :Sport
+    response :unauthorized
+    response :not_acceptable
+    response :not_found
+  end
 
 
 

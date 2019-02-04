@@ -7,9 +7,10 @@ Swagger::Docs::Config.register_apis({
       # the URL base path to your API
       :base_path => "http://localhost:3000",
       # if you want to delete all .json files at each generation
-      :clean_directory => false,
+      :clean_directory => true,
       # Ability to setup base controller for each api version. Api::V1::SomeController for example.
-      :parent_controller => ActionController::API,
+      :base_api_controller => ActionController::API,
+      :parent_controller => ApplicationController,
       # add custom attributes to api-docs
       :attributes => {
         :info => {
