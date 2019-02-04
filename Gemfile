@@ -22,6 +22,9 @@ gem 'jbuilder', '~> 2.5'
 #Elasticsearch client 
 gem 'tire'
 
+#Swagger - automatizador de documentação
+gem 'swagger-docs'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
