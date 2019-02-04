@@ -23,6 +23,13 @@ Ex:
 curl -H "Content-Type: application/json" -X POST http://localhost:3000/groups/1/accounts -d '{"athlete_id":1, "group_id":1, "status":"pendente"}'
 ```
 
+O atributo status contém as seguintes opções:
+1. " pendente"
+1. "ativo"
+1. "inativo"
+1. "suspenso"
+1. "afastado" 
+
 ### Atualizar a conta de um atleta em um determinado grupo
 É necessário fazer uma requisição para http://\<endereçoDaAplicação\> com o método **PATCH** para o recurso "/groups/\<idDoGrupo\>/accounts/\<idDaConta\>" passando o JSON no corpo da requisição com os dados a serem atualizados.
 
