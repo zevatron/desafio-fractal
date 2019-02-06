@@ -10,29 +10,29 @@ class SportsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create sport" do
-    assert_difference('Sport.count') do
-      post sports_url, params: { sport: { descricao: @sport.descricao, nome: @sport.nome, regra: @sport.regra } }, as: :json
-    end
+  # test "should create sport" do
+  #   assert_difference('Sport.count') do
+  #     post sports_url, params: { sport: { descricao: @sport.descricao, nome: @sport.nome, regra: @sport.regra } }, as: :json
+  #   end
 
-    assert_response 201
-  end
+  #   assert_response 201
+  # end
 
   test "should show sport" do
     get sport_url(@sport), as: :json
     assert_response :success
   end
 
-  test "should update sport" do
-    patch sport_url(@sport), params: { sport: { descricao: @sport.descricao, nome: @sport.nome, regra: @sport.regra } }, as: :json
-    assert_response 200
-  end
+  # test "should update sport" do
+  #   patch sport_url(@sport), params: { sport: { descricao: @sport.descricao, nome: @sport.nome, regra: @sport.regra } }, as: :json
+  #   assert_response 200
+  # end
 
-  test "should destroy sport" do
-    assert_difference('Sport.count', -1) do
-      delete sport_url(@sport), as: :json
-    end
+  # test "should destroy sport" do
+  #   assert_difference('Sport.count', -1) do
+  #     delete sport_url(@sport), as: :json
+  #   end
 
-    assert_response 204
-  end
+  #   assert_response 204
+  # end
 end
