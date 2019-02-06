@@ -112,6 +112,15 @@ Ex:
 curl -X GET http://localhost:3000/groups
 ```
 
+### Realizar a busca em grupos
+É necessário fazer uma requisição para http://\<endereçoDaAplicação\> com o método **GET** para o recurso "/groups" e passar o parâmetro **q** com valor a ser encontrado
+
+Ex:
+
+```sh
+curl -X GET http://localhost:3000/groups?q=grupo
+```
+
 ### Listar um grupo
 É necessário fazer uma requisição para http://\<endereçoDaAplicação\> com o método **GET** para o recurso "/groups/\<idDoGrupo\>"
 
